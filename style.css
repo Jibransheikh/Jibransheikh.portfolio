@@ -2,11 +2,10 @@
     --bg-color: #1a1a1b;
 }
 
-body {
-    background-color: var(--bg-color);
-}
-
-.bg-carbon {
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
     background-color: var(--bg-color);
 }
 
@@ -27,7 +26,7 @@ html {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 10px 18px;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-family: ui-monospace, monospace;
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -39,5 +38,21 @@ html {
     background: #fff;
     color: #000;
     border-color: #fff;
-    transform: translateY(-2px);
+}
+
+/* Wing Colors */
+.text-dev { color: #06b6d4; }
+.border-dev { border-color: #06b6d4; }
+
+.text-studio { color: #a855f7; }
+.border-studio { border-color: #a855f7; }
+
+.text-labs { color: #f97316; }
+.border-labs { border-color: #f97316; }
+
+[data-aos] {
+    pointer-events: none;
+}
+.aos-animate {
+    pointer-events: auto;
 }

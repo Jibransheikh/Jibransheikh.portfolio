@@ -2,130 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>BIN-BOI // Project Dossier</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
 </head>
-<body class="bg-carbon text-slate-300 selection:bg-orange-500/30">
-
+<body class="bg-carbon text-slate-300">
     <div class="grain"></div>
 
     <nav class="fixed w-full z-50 px-8 py-6 flex justify-between items-center backdrop-blur-md border-b border-white/5">
-        <a href="../index.html" class="text-xs font-mono text-orange-500 hover:text-white transition-colors tracking-widest uppercase">
-            <- BACK_TO_BASE
-        </a>
-        <div class="text-xl font-bold tracking-tighter text-white uppercase">BIN-BOI<span class="text-orange-500">.</span></div>
+        <a href="../index.html" class="text-[10px] font-mono text-orange-500 hover:text-white uppercase tracking-widest"><- BACK_TO_BASE</a>
+        <div class="text-xl font-bold tracking-tighter text-white uppercase italic">BIN-BOI<span class="text-orange-500">.</span></div>
     </nav>
 
     <main class="relative pt-40 px-6 md:px-12 max-w-5xl mx-auto">
-        
-        <header class="mb-24" data-aos="fade-up">
-            <h1 class="text-6xl md:text-8xl font-black text-white leading-none mb-4 tracking-tighter uppercase">
-                BIN-BOI<span class="text-orange-500">.</span>
-            </h1>
-            <div class="flex flex-wrap gap-6 font-mono text-xs tracking-[0.3em] opacity-60">
-                <span>#/ dev</span>
-                <span class="text-white">[studio]</span>
-                <span>// labs .</span>
+        <header class="mb-24 text-center md:text-left" data-aos="fade-up">
+            <h1 class="text-6xl md:text-8xl font-black text-white leading-none mb-6 tracking-tighter uppercase">BIN-BOI<span class="text-orange-500">.</span></h1>
+            <div class="flex flex-col sm:flex-row flex-wrap justify-center md:justify-start gap-4 md:gap-8 font-mono text-[10px] tracking-[0.3em]">
+                <span class="text-dev">#/ dev</span>
+                <span class="text-studio">[studio]</span>
+                <span class="text-labs">// labs .</span>
             </div>
         </header>
 
         <section class="py-16 border-t border-white/10" data-aos="fade-up">
-            <h2 class="text-xs font-mono text-orange-500 uppercase tracking-[0.4em] mb-8">01_DEFINITION</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-                <h3 class="text-4xl font-bold text-white leading-tight">WHAT IS BIN-BOI?</h3>
-                <p class="text-xl text-slate-400 leading-relaxed italic">
-                    "Focusing on connecting people to each other to create a better understanding of the world we live in from a relatable, grounded point of view. Making people aware & responsible for the waste we create. Simple enough innit?"
-                </p>
-            </div>
+            <h3 class="text-3xl font-bold text-white mb-8 uppercase tracking-tighter">WHAT IS BIN-BOI?</h3>
+            <p class="text-xl text-slate-400 italic leading-relaxed">
+                "Focusing on connecting people to each other to create a better understanding of the world we live in from a relatable, grounded point of view. Making people aware & responsible for the waste we create. Simple enough innit?"
+            </p>
         </section>
 
-        <section class="py-16 grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5 border border-white/5">
-            
-            <div class="bg-carbon p-8 hover:bg-white transition-all duration-500 group" data-aos="fade-up">
-                <h4 class="font-mono text-orange-500 text-[10px] mb-6 tracking-widest uppercase">#/ dev</h4>
-                <h3 class="text-2xl font-bold text-white group-hover:text-black mb-4 uppercase">Binboi.dev</h3>
-                <p class="text-sm text-slate-400 group-hover:text-slate-600 leading-relaxed">
-                    A digital sandbox. We experiment with software to see what sticks. Tiny indie games, community platforms, and interactive apps. Light, flexible, and open-source.
-                </p>
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5 border border-white/5">
+            <div class="bg-carbon p-8 border-t-2 border-dev group hover:bg-white transition-all duration-500" data-aos="fade-up">
+                <h4 class="font-mono text-dev text-[10px] mb-6 uppercase">#/ dev</h4>
+                <h3 class="text-2xl font-bold text-white group-hover:text-black mb-4">BINBOI.DEV</h3>
+                <p class="text-sm text-slate-400 group-hover:text-slate-600">Digital sandbox for software experiments. Tools that bring people together, open-source and flexible.</p>
             </div>
-
-            <div class="bg-carbon p-8 hover:bg-white transition-all duration-500 group" data-aos="fade-up" data-aos-delay="100">
-                <h4 class="font-mono text-orange-500 text-[10px] mb-6 tracking-widest uppercase">[studio]</h4>
-                <h3 class="text-2xl font-bold text-white group-hover:text-black mb-4 uppercase">Binboi.studio</h3>
-                <p class="text-sm text-slate-400 group-hover:text-slate-600 leading-relaxed">
-                    Our storytelling engine. Connecting people globally through shared art and relatable media. Building remote opportunities and pairing stories across borders.
-                </p>
+            <div class="bg-carbon p-8 border-t-2 border-studio group hover:bg-white transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
+                <h4 class="font-mono text-studio text-[10px] mb-6 uppercase">[studio]</h4>
+                <h3 class="text-2xl font-bold text-white group-hover:text-black mb-4">BINBOI.STUDIO</h3>
+                <p class="text-sm text-slate-400 group-hover:text-slate-600">Content engine pairing stories across borders. Shared art and relatable global media.</p>
             </div>
-
-            <div class="bg-carbon p-8 hover:bg-white transition-all duration-500 group" data-aos="fade-up" data-aos-delay="200">
-                <h4 class="font-mono text-orange-500 text-[10px] mb-6 tracking-widest uppercase">// labs .</h4>
-                <h3 class="text-2xl font-bold text-white group-hover:text-black mb-4 uppercase">Binboi.labs</h3>
-                <p class="text-sm text-slate-400 group-hover:text-slate-600 leading-relaxed">
-                    The blue-collar heart. Salvaging, recycling, and hardware modding. We give "useless" electronics a second life and reduce e-waste with our hands dirty.
-                </p>
+            <div class="bg-carbon p-8 border-t-2 border-labs group hover:bg-white transition-all duration-500" data-aos="fade-up" data-aos-delay="200">
+                <h4 class="font-mono text-labs text-[10px] mb-6 uppercase">// labs .</h4>
+                <h3 class="text-2xl font-bold text-white group-hover:text-black mb-4">BINBOI.LABS</h3>
+                <p class="text-sm text-slate-400 group-hover:text-slate-600">Blue-collar heart. Salvaging and hardware modding to give tech a second life and reduce e-waste.</p>
             </div>
-
         </section>
 
         <section class="py-24" data-aos="fade-up">
-            <h2 class="text-xs font-mono text-orange-500 uppercase tracking-[0.4em] mb-12">02_THE_ECOSYSTEM</h2>
-            <div class="p-12 border border-white/5 bg-white/5">
-                <h3 class="text-3xl font-bold text-white mb-12 uppercase italic">The Bin-Boi Tree</h3>
-                <div class="space-y-8 font-mono text-xs tracking-wider uppercase">
-                    <div class="flex gap-4 items-start">
-                        <span class="text-orange-500">[LABS -> STUDIO]</span>
-                        <span class="opacity-60">Physical builds provide the raw, grounded stories.</span>
+            <h2 class="text-xs font-mono text-orange-500 uppercase tracking-[0.4em] mb-12">02_THE_TREE</h2>
+            <div class="p-6 md:p-10 border border-white/5 bg-white/5">
+                <h3 class="text-3xl font-bold text-white mb-12 uppercase italic">Ecosystem Logic</h3>
+                <div class="space-y-10 font-mono text-[9px] md:text-[10px] tracking-widest uppercase">
+                    <div class="flex flex-col lg:flex-row lg:items-center gap-4">
+                        <span class="text-labs px-2 py-1 border border-labs/30 bg-labs/5 whitespace-nowrap w-fit">LABS -> STUDIO</span>
+                        <span class="opacity-50">Physical builds provide the raw, grounded story for the Studio.</span>
                     </div>
-                    <div class="flex gap-4 items-start">
-                        <span class="text-orange-500">[STUDIO -> DEV]</span>
-                        <span class="opacity-60">Stories find interactive homes in indie games or apps.</span>
+                    <div class="flex flex-col lg:flex-row lg:items-center gap-4">
+                        <span class="text-studio px-2 py-1 border border-studio/30 bg-studio/5 whitespace-nowrap w-fit">STUDIO -> DEV</span>
+                        <span class="opacity-50">Stories find interactive homes in apps and indie games.</span>
                     </div>
-                    <div class="flex gap-4 items-start">
-                        <span class="text-orange-500">[DEV -> LABS]</span>
-                        <span class="opacity-60">Software tools manage and monitor physical builds.</span>
+                    <div class="flex flex-col lg:flex-row lg:items-center gap-4">
+                        <span class="text-dev px-2 py-1 border border-dev/30 bg-dev/5 whitespace-nowrap w-fit">DEV -> LABS</span>
+                        <span class="opacity-50">Software tools help manage and monitor physical builds.</span>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-24 border-t border-white/5" data-aos="fade-up">
-            <h2 class="text-xs font-mono text-orange-500 uppercase tracking-[0.4em] mb-12">03_CO-CONSPIRATORS</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div>
-                    <h4 class="text-white font-bold mb-4 uppercase">Creative Techies</h4>
-                    <p class="text-sm text-slate-400">Youthful mindset. Not afraid to get hands dirty with code or hardware modding.</p>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold mb-4 uppercase">Partners</h4>
-                    <p class="text-sm text-slate-400">NGOs, CBOs, or small groups needing agile storytelling without the corporate headache.</p>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold mb-4 uppercase">Collaborators</h4>
-                    <p class="text-sm text-slate-400">Dreamers who see "waste" as a resource and "slowness" as intentionality.</p>
                 </div>
             </div>
         </section>
 
         <section class="py-32 text-center border-t border-white/5" data-aos="zoom-in">
-            <h3 class="text-4xl md:text-6xl font-black text-white mb-8 tracking-tighter uppercase">Got a story? <br>A broken console?</h3>
+            <h3 class="text-4xl md:text-6xl font-black text-white mb-8 tracking-tighter uppercase leading-none">Got a story? <br>A broken console?</h3>
             <p class="text-slate-400 mb-12">Let’s see what we can build.</p>
-            <a href="mailto:binboi.biz@gmail.com" class="text-xl font-mono text-white hover:text-orange-500 transition-colors border-b border-orange-500 pb-2">binboi.biz@gmail.com</a>
+            <a href="mailto:binboi.biz@gmail.com" class="text-lg font-mono text-white hover:text-orange-500 border-b border-orange-500 pb-1">binboi.biz@gmail.com</a>
         </section>
-
     </main>
 
-    <footer class="py-12 px-12 border-t border-white/5 flex justify-center bg-black/20">
-        <p class="text-[9px] font-mono uppercase tracking-[0.5em] opacity-30">
-            BIN-BOI BIZ // DOSSIER_REF_001 // 2026
-        </p>
+    <footer class="py-12 border-t border-white/5 text-center">
+        <p class="text-[9px] font-mono uppercase tracking-[0.5em] opacity-30">BIN-BOI BIZ // DOSSIER // 2026</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 800, once: true });
-    </script>
+    <script>AOS.init({ duration: 800, once: true });</script>
 </body>
 </html>
